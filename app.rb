@@ -36,47 +36,47 @@ get '/play' do
 	else a1 = "X"
 	end
 	if a2 == "O"
-			a2 = "O"
-		elsif a2 == """"
-			a2 = """"
-		else a2 = "X"
-		end
+		a2 = "O"
+	elsif a2 == """"
+		a2 = """"
+	else a2 = "X"
+	end
 	if a3 == "O"
-			a3 = "O"
-		elsif a3 == """"
-			a3 = """"
-		else a3 = "X"
-		end
+		a3 = "O"
+	elsif a3 == """"
+		a3 = """"
+	else a3 = "X"
+	end
 	if a4 == "O"
-			a4 = "O"
-		elsif a4 == ""
-			a4 = ""
-		else a4 = "X"
-		end
+		a4 = "O"
+	elsif a4 == ""
+		a4 = ""
+	else a4 = "X"
+	end
 	if a5 == "O"
-			a5 = "O"
-		elsif a5 == ""
-			a5 = ""
-		else a5 = "X"
-		end
+		a5 = "O"
+	elsif a5 == ""
+		a5 = ""
+	else a5 = "X"
+	end
 	if a6 == "O"
-			a6 = "O"
-		elsif a6 == ""
-			a6 = ""
-		else a6 = "X"
-		end
+		a6 = "O"
+	elsif a6 == ""
+		a6 = ""
+	else a6 = "X"
+	end
 	if a8 == "O"
-			a8 = "O"
-		elsif a8 == ""
-			a8 = ""
-		else a8 = "X"
-		end
+		a8 = "O"
+	elsif a8 == ""
+		a8 = ""
+	else a8 = "X"
+	end
 	if a9 == "O"
-			a9 = "O"
-		elsif a9 == ""
-			a9 = ""
-		else a9 = "X"
-		end
+		a9 = "O"
+	elsif a9 == ""
+		a9 = ""
+	else a9 = "X"
+	end
 	random = plays_random(a1, a2, a3, a4, a5, a6, a7, a8, a9)
 	puts "random is #{random}"
 	if random == a1
