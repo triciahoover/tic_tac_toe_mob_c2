@@ -1,0 +1,92 @@
+Welcome to Tricia's Tic Tac Toe
+
+<form method="post" action="/play">
+<table>
+    <tr>
+         <td>
+<input type="hidden" name="a1" value = "<%=a1%>">
+<% if a1 != """" %>
+    <%= a1 %>
+<% else %>
+    <input type="input" name="a1"> </td>
+<% end %>
+        
+    <td>
+<input type="hidden" name="a2" value = "<%=a2%>">
+<% if a2 != """" %>
+    <%= a2 %>
+<% else %>
+    <input type="input" name="a2"> </td>
+<% end %> 
+    </td>
+
+    <td>
+<input type="hidden" name="a3" value = "<%= a3%>">
+<% if a3 != """" %>
+    <%= a3 %>
+<% else %>
+    <input type="input" name="a3"> </td>
+<% end %> 
+    </td>
+    </tr>
+
+    <tr>
+        <td>
+<input type="hidden" name="a4" value = "<%=a4%>">
+<% if a4 != """" %>
+    <%= a4 %>
+<% else %>
+    <input type="input" name="a4"> 
+<% end %>
+    </td>
+    
+     <td>
+<input type="hidden" name="a5" value = "<%=a5%>">
+<% if a5 != """" %>
+    <%= a5 %>
+<% else %>
+    <input type="input" name="a5"> 
+<% end %>
+</td>
+
+        <td>
+<input type="hidden" name="a6" value = "<%=a6%>">
+<% if a6 != """" %>
+    <%= a6 %>
+<% else %>
+    <input type="input" name="a6"> 
+<% end %>
+</td>
+
+    </tr>
+
+    <tr>
+        <td>
+<input type="hidden" name="a7" value = "<%=a7%>">
+<% if a7 != """" %>
+    <%= a7 %>
+<% else %>
+    <input type="input" name="a7"> 
+<% end %>
+</td>
+        <td>
+<input type="hidden" name="a8" value = "<%=a8%>">
+<% if a8 != """" %>
+    <%= a8 %>
+<% else %>
+    <input type="input" name="a8"> 
+<% end %>
+        </td>
+
+        <td>
+<input type="hidden" name="a9" value = "<%=a9%>">
+<% if a9 != """" %>
+    <%= a9 %>
+<% else %>
+    <input type="input" name="a9"> 
+<% end %>
+        </td>
+
+    </tr>
+</table>
+<input type="submit">
