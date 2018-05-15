@@ -1,31 +1,52 @@
-Welcome to Tricia's Tic Tac Toe
-
+<body>
+<br>
+<br>
+<b>Tricia's Tic Tac Toe</b>
+<br>
+<% winner_check = winner(a1, a2, a3, a4, a5, a6, a7, a8, a9) %> 
+   <% if winner_check == "X" %>
+        You are a winner!
+    <% elsif winner_check == "O" %>
+        O Wins the Game!!
+   <% else %>
+        Please make another play
+   <% end %>
+<center>
+<br>
+<br>
 <form method="post" action="/play">
 <table>
     <tr>
          <td>
 <input type="hidden" name="a1" value = "<%=a1%>">
-<% if a1 != """" %>
-    <%= a1 %>
+<% if a1 == "O" %>
+    O
+    <% elsif a1 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a1"> </td>
+    <input type="input" name="a1" size="2"> 
 <% end %>
-        
+   </td>
+
     <td>
 <input type="hidden" name="a2" value = "<%=a2%>">
-<% if a2 != """" %>
-    <%= a2 %>
+<% if a2 == "O" %>
+    O
+<% elsif a2 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a2"> </td>
+    <input type="input" name="a2" size="2"> 
 <% end %> 
     </td>
 
     <td>
 <input type="hidden" name="a3" value = "<%= a3%>">
-<% if a3 != """" %>
-    <%= a3 %>
+<% if a3 == "O" %>
+    O
+<% elsif a3 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a3"> </td>
+    <input type="input" name="a3" size="2"> 
 <% end %> 
     </td>
     </tr>
@@ -33,28 +54,34 @@ Welcome to Tricia's Tic Tac Toe
     <tr>
         <td>
 <input type="hidden" name="a4" value = "<%=a4%>">
-<% if a4 != """" %>
-    <%= a4 %>
+<% if a4 == "O" %>
+    O
+<% elsif a4 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a4"> 
+    <input type="input" name="a4" size="2"> 
 <% end %>
     </td>
     
      <td>
 <input type="hidden" name="a5" value = "<%=a5%>">
-<% if a5 != """" %>
-    <%= a5 %>
+<% if a5 == "O" %>
+    O
+ <% elsif a5 == "X" %>
+    X  
 <% else %>
-    <input type="input" name="a5"> 
+    <input type="input" name="a5" size="2"> 
 <% end %>
 </td>
 
         <td>
 <input type="hidden" name="a6" value = "<%=a6%>">
-<% if a6 != """" %>
-    <%= a6 %>
+<% if a6 == "O" %>
+    O
+<% elsif a6 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a6"> 
+    <input type="input" name="a6" size="2"> 
 <% end %>
 </td>
 
@@ -63,30 +90,38 @@ Welcome to Tricia's Tic Tac Toe
     <tr>
         <td>
 <input type="hidden" name="a7" value = "<%=a7%>">
-<% if a7 != """" %>
-    <%= a7 %>
+<% if a7 == "O" %>
+    O
+<% elsif a7 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a7"> 
+    <input type="input" name="a7" size="2"> 
 <% end %>
 </td>
         <td>
 <input type="hidden" name="a8" value = "<%=a8%>">
-<% if a8 != """" %>
-    <%= a8 %>
+<% if a8 == "O" %>
+    O
+<% elsif a8 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a8"> 
+    <input type="input" name="a8" size="2"> 
 <% end %>
         </td>
 
         <td>
 <input type="hidden" name="a9" value = "<%=a9%>">
-<% if a9 != """" %>
-    <%= a9 %>
+<% if a9 == "O" %>
+    O
+<% elsif a9 == "X" %>
+    X
 <% else %>
-    <input type="input" name="a9"> 
+    <input type="input" name="a9" size="2"> 
 <% end %>
         </td>
 
     </tr>
 </table>
 <input type="submit">
+</center>
+</body>

@@ -49,8 +49,8 @@ get '/play' do
 		end
 	if a4 == "O"
 			a4 = "O"
-		elsif a4 == ""
-			a4 = ""
+		elsif a4 == """"
+			a4 = """"
 		else a4 = "X"
 		end
 	if a5 == "O"
@@ -64,6 +64,12 @@ get '/play' do
 		elsif a6 == ""
 			a6 = ""
 		else a6 = "X"
+		end
+	if a7 == "O"
+			a7 = "O"
+		elsif a7 == ""
+			a7 = ""
+		else a7 = "X"
 		end
 	if a8 == "O"
 			a8 = "O"
@@ -79,24 +85,26 @@ get '/play' do
 		end
 	random = plays_random(a1, a2, a3, a4, a5, a6, a7, a8, a9)
 	puts "random is #{random}"
-	if random == a1
+	puts random.class
+	if random == "a1"
 		a1 = "O"
-	elsif random == a2
+	elsif random == "a2"
 		a2 = "O"
-	elsif random == a3
+	elsif random == "a3"
 		a3 = "O"
-	elsif random == a4
+	elsif random == "a4"
 		a4 = "O"
-	elsif random == a5
+	elsif random == "a5"
 		a5 = "O"
-	elsif random == a6
+	elsif random == "a6"
 		a6 = "O"
-	elsif random == a7
+	elsif random == "a7"
 		a7 = "O"
-	elsif random == a8
+	elsif random == "a8"
 		a8 = "O"
-	elsif random == a9
+	elsif random == "a9"
 		a9 = "O"
 	end
-	erb :play, :locals => {:a1 => a1, :a2 => a2, :a3 => a3, :a4 => a4, :a5 => a5, :a6 => a6, :a7 => a7, :a8 => a8, :a9 => a9,}
+	puts a1, a2, a3, a4, a5, a6, a7, a8, a9
+	erb :play, :locals => {:a1 => a1, :a2 => a2, :a3 => a3, :a4 => a4, :a5 => a5, :a6 => a6, :a7 => a7, :a8 => a8, :a9 => a9}
 end

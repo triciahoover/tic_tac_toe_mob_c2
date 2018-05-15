@@ -1,5 +1,29 @@
+body {
+	background-color: Blue;
+	color: white;
+	font-size: 18;
+	text-align: center;
+}
+
 td {
-border: 1px solid black;
-height: 50px;
-width: 50px;
+	border: 1px solid black;
+	height: 50px;
+	width: 50px;
+}
+
+footer {
+  	border-top: solid;
+  	border-color: black;
+  	text-align: center;
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 30%;
+}
+
+.footer-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
